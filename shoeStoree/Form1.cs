@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace shoeStoree
 {
@@ -69,6 +70,8 @@ namespace shoeStoree
 
             try
             {
+                SoundPlayer cash = new SoundPlayer(Properties.Resources.cash);
+                cash.Play();
                 int jordan4 = Convert.ToInt32(jordan4Input.Text);
                 int jordan1 = Convert.ToInt32(jordan1Input.Text);
                 int jordan6 = Convert.ToInt32(Jordan6Input.Text);
@@ -105,6 +108,8 @@ namespace shoeStoree
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SoundPlayer cash = new SoundPlayer(Properties.Resources.cash);
+            cash.Play();
             int jordan4 = Convert.ToInt32(jordan4Input.Text);
             int jordan1 = Convert.ToInt32(jordan1Input.Text);
             int jordan6 = Convert.ToInt32(Jordan6Input.Text);
@@ -126,6 +131,8 @@ namespace shoeStoree
 
         private void reciptButton_Click(object sender, EventArgs e)
         {
+            SoundPlayer receipt = new SoundPlayer(Properties.Resources.receipt);
+            receipt.Play();
             int jordan4 = Convert.ToInt32(jordan4Input.Text);
             int jordan1 = Convert.ToInt32(jordan1Input.Text);
             int jordan6 = Convert.ToInt32(Jordan6Input.Text);
@@ -164,8 +171,8 @@ namespace shoeStoree
             Thread.Sleep(15);
             reciptLabel.Text += $"\n\n Have A Great Day!\n Thank you for shopping.";
 
-
             
+
 
 
         }

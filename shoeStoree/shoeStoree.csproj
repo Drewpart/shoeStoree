@@ -89,5 +89,11 @@
   <ItemGroup>
     <None Include="Resources\shoeIconJordan4RetroRed.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\463281__daniramo5__cash-register-wav.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\529242__orelbitan__taxi-paper-meter.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
