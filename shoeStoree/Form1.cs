@@ -70,8 +70,8 @@ namespace shoeStoree
 
             try
             {
-                SoundPlayer cash = new SoundPlayer(Properties.Resources.cash);
-                cash.Play();
+                //SoundPlayer cash = new SoundPlayer(Properties.Resources.cash);
+                //cash.Play();
                 int jordan4 = Convert.ToInt32(jordan4Input.Text);
                 int jordan1 = Convert.ToInt32(jordan1Input.Text);
                 int jordan6 = Convert.ToInt32(Jordan6Input.Text);
@@ -131,8 +131,7 @@ namespace shoeStoree
 
         private void reciptButton_Click(object sender, EventArgs e)
         {
-            SoundPlayer receipt = new SoundPlayer(Properties.Resources.receipt);
-            receipt.Play();
+            
             int jordan4 = Convert.ToInt32(jordan4Input.Text);
             int jordan1 = Convert.ToInt32(jordan1Input.Text);
             int jordan6 = Convert.ToInt32(Jordan6Input.Text);
